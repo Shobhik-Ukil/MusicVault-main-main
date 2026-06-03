@@ -58,8 +58,18 @@ async function loadProfile(){
 
     const userReviews =
     reviews.filter(
-        r=>r.reviewer===username
-    );
+
+    r =>
+
+    r.reviewer
+    ?.toLowerCase()
+
+    ===
+
+    username
+    ?.toLowerCase()
+
+);
 
     if(userReviews.length===0){
 
