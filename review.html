@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Add Review</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-record-vinyl"></i>
+
+            <span>MusicVault</span>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                Home
+
+            </a>
+
+            <a
+            href="review.html"
+            class="active">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Review
+
+            </a>
+
+            <a
+            id="profileLink"
+            href="profile.html">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span id="profileText">
+
+                    Profile
+
+                </span>
+
+            </a>
+
+            <button id="logoutBtn" class="logout-btn">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </button>
+
+
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="container">
+
+            <h1>
+
+                Add Review
+
+            </h1>
+
+            <p class="subtitle">
+
+                Share your thoughts
+                with the community.
+
+            </p>
+
+            <form id="reviewForm">
+
+                <input
+                type="text"
+                id="album"
+                placeholder="Album Name"
+                required>
+
+                <input
+                type="text"
+                id="artist"
+                placeholder="Artist"
+                required>
+
+                <input
+                type="text"
+                id="genre"
+                placeholder="Genre"
+                required>
+
+                <input
+                type="number"
+                id="rating"
+                placeholder="Rating (0-100)"
+                min="0"
+                max="100"
+                required>
+
+                <textarea
+                id="review"
+                placeholder="Write review..."
+                rows="6"
+                required></textarea>
+
+                <button type="submit">
+
+                    Submit Review
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script type="module"
+src="js/review.js"></script>
+
+</body>
+</html>
